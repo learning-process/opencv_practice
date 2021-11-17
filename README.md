@@ -1,2 +1,1 @@
-# opencv_practice
-OpenCV library practice
+# OpenCV library practice
