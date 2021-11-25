@@ -1,4 +1,4 @@
-# OpenCV DNN Classification
+# OpenCV DNN Face Detection
 
 ## 1. Install OpenVINO python (get omz_downloader)
 ```
@@ -11,7 +11,7 @@ python3 -m pip install openvino-dev
 
 ## 3. Download model
 ```
-omz_downloader --name densenet-121
+omz_downloader --name ssd300
 ```
 
 ## 4. Build OpenCV 
@@ -24,9 +24,9 @@ cmake --build .
 cd ../..
 ```
 
-## 5. Build dnn_classification 
+## 5. Build dnn_face_detection 
 ```
-cd dnn_classification
+cd dnn_face_detection
 mkdir build
 cd build
 cmake -D OpenCV_DIR=../opencv/build/ ..
@@ -34,7 +34,7 @@ cmake --build .
 cd ../..
 ```
 
-## 6. Run dnn_classification 
+## 6. Run dnn_face_detection 
 ```
-./dnn_classification/build/DNN_CLASSIFICATION public/densenet-121/densenet-121.prototxt public/densenet-121/densenet-121.caffemodel  dnn_classification/car.jpg
+./dnn_face_detection/build/DNN_FACE_DETECTION public/ssd300/ssd300.prototxt public/ssd300/ssd300.caffemodel
 ```
