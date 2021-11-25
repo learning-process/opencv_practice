@@ -16,6 +16,7 @@ omz_downloader --name ssd300
 
 ## 4. Build OpenCV 
 ```
+git clone https://github.com/opencv/opencv
 cd opencv
 mkdir build
 cd build
@@ -36,5 +37,5 @@ cd ../..
 
 ## 6. Run dnn_face_detection 
 ```
-./dnn_face_detection/build/DNN_FACE_DETECTION public/ssd300/ssd300.prototxt public/ssd300/ssd300.caffemodel
+./dnn_face_detection/build/DNN_FACE_DETECTION public/ssd300/models/VGGNet/VOC0712Plus/SSD_300x300_ft/deploy.prototxt public/ssd300/models/VGGNet/VOC0712Plus/SSD_300x300_ft/VGG_VOC0712Plus_SSD_300x300_ft_iter_160000.caffemodel dnn_face_detection/nobel.jpg
 ```

@@ -16,6 +16,7 @@ omz_downloader --name densenet-121
 
 ## 4. Build OpenCV 
 ```
+git clone https://github.com/opencv/opencv
 cd opencv
 mkdir build
 cd build
